@@ -98,7 +98,7 @@ planets.push({
 
 addStars();
 
-// === Create Speed Control Sliders ===
+// ===  Speed Control Sliders ===
 const slidersContainer = document.getElementById('sliders');
 
 planets.forEach((planet, index) => {
@@ -125,12 +125,12 @@ planets.forEach((planet, index) => {
   slidersContainer.appendChild(group);
 });
 
-// === 4. Animate the scene ===
+// ===  Animate the scene ===
 function animate() {
   requestAnimationFrame(animate);
   if (isPaused) return;
 
-  // Optional: Slowly rotate the Sun
+  // Slowly rotate the Sun
   sun.rotation.y += 0.001;
 
  // Animate all planets
@@ -152,7 +152,7 @@ planet.label.style.top = `${y2d}px`;
 }
 animate();
 
-// === 5. Handle window resizing ===
+// === Handle window resizing ===
 window.addEventListener('resize', () => {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
