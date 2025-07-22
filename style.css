@@ -1,3 +1,80 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#solarCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#control-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#control-panel h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.slider-group {
+  margin-bottom: 0.5rem;
+}
+
+.slider-group label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.slider-group input[type="range"] {
+  width: 100%;
+}
+
+#labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.planet-label {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  transform: translate(-50%, -50%);
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode #control-panel {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body.light-mode .planet-label {
+  color: black;
+
 * {
   margin: 0;
   padding: 0;
